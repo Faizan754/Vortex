@@ -10,7 +10,7 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card.Root borderRadius={10}>
+    <Card.Root width="260px" borderRadius={10}>
       <Card.Header>
         <Image src={getCroppedImageUrl(game.background_image)}></Image>
       </Card.Header>
@@ -23,7 +23,6 @@ const GameCard = ({ game }: Props) => {
           <CriticScore score={game.metacritic} />
         </HStack>
       </Card.Body>
-      <Card.Footer />
     </Card.Root>
   );
 };
