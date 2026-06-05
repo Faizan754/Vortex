@@ -39,6 +39,7 @@ const PlatformIconList = ({ platforms }: Props) => {
           color={"gray.500"}
         ></Icon>
       ))}
+      
     </HStack>
   );
 };
