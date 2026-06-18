@@ -42,7 +42,7 @@ function App() {
       </GridItem>
 
       <Show when={isLarge}>
-        <GridItem area="aside" paddingX="5px">
+        <GridItem wordBreak="break-world" area="aside" paddingX="5px">
           <GenreList
             onSelectGenre={(genre) => setGameQuery({ ...gameQuery, genre })}
             selectedGenre={gameQuery.genre}
